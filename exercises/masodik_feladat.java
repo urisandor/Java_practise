@@ -1,5 +1,3 @@
-package exercises;
-
 import java.util.*;
 
 class Ora{
@@ -7,7 +5,7 @@ class Ora{
     private int code;
     private String name;
     private int start;
-    public Ora(){
+    public Ora(int code, String name, int start){
         this.code = code;
         this.name = name;
         this.start = start;
@@ -54,7 +52,8 @@ public class masodik_feladat {
 
     System.out.print("Add meg az orad kezdetet:");
     int start = input.nextInt();
-    
+    input.close();
+
     if (start < 8 || start > 19) {
         System.err.println("Nincs ilyen idopontban ora!!");
         System.exit(1);
@@ -64,4 +63,6 @@ public class masodik_feladat {
     System.out.println("Az orad neve: " + name);
     System.out.println("Az orad " + start + "-kor fog kezdodni.");
     }
+
+    
 }
