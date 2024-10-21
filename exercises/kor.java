@@ -38,6 +38,7 @@ public class kor {
         double t = circle.Terulet();
         System.out.print("A kor Terulete: " + t + " cm2");
 
+        
         input.close();
     }
 }
