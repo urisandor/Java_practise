@@ -41,6 +41,4 @@ public class negyzet {
         
         input.close();
     }
-
-    
 }
